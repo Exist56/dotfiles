@@ -1,0 +1,9 @@
+#! /usr/bin/bash
+
+#start wallpaper
+feh --bg-scale ~/.local/share/wallpaper/cityBlock.jpg &
+
+#start picom for transparent
+picom &
+#Start DWM
+exec dwm

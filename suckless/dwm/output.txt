@@ -1,0 +1,85 @@
+dwm.c: In function 'createmon':
+dwm.c:668:21: error: 'gappih' undeclared (first use in this function)
+  668 |         m->gappih = gappih;
+      |                     ^~~~~~
+dwm.c:668:21: note: each undeclared identifier is reported only once for each function it appears in
+dwm.c:669:21: error: 'gappiv' undeclared (first use in this function)
+  669 |         m->gappiv = gappiv;
+      |                     ^~~~~~
+dwm.c:670:21: error: 'gappoh' undeclared (first use in this function)
+  670 |         m->gappoh = gappoh;
+      |                     ^~~~~~
+dwm.c:671:21: error: 'gappov' undeclared (first use in this function)
+  671 |         m->gappov = gappov;
+      |                     ^~~~~~
+dwm.c: In function 'defaultgaps':
+dwm.c:1564:17: error: 'gappoh' undeclared (first use in this function)
+ 1564 |         setgaps(gappoh, gappov, gappih, gappiv);
+      |                 ^~~~~~
+dwm.c:1564:25: error: 'gappov' undeclared (first use in this function)
+ 1564 |         setgaps(gappoh, gappov, gappih, gappiv);
+      |                         ^~~~~~
+dwm.c:1564:33: error: 'gappih' undeclared (first use in this function)
+ 1564 |         setgaps(gappoh, gappov, gappih, gappiv);
+      |                                 ^~~~~~
+dwm.c:1564:41: error: 'gappiv' undeclared (first use in this function)
+ 1564 |         setgaps(gappoh, gappov, gappih, gappiv);
+      |                                         ^~~~~~
+dwm.c: In function 'tile':
+dwm.c:1834:13: error: 'smartgaps' undeclared (first use in this function); did you mean 'setgaps'?
+ 1834 |         if (smartgaps == n) {
+      |             ^~~~~~~~~
+      |             setgaps
+dwm.c:1841:59: error: expected ';' before 'for'
+ 1841 |                 mw = m->ww - 2*m->gappov*oe + m->gappiv*ie
+      |                                                           ^
+      |                                                           ;
+ 1842 |         for (i = 0, my = ty = m->gappoh*oe, c = nexttiled(m->clients); c; c = nexttiled(c->next), i++)
+      |         ~~~                                                
+dwm.c:1827:76: warning: unused variable 'ty' [-Wunused-variable]
+ 1827 |         unsigned int i, n, h, r, oe = enablegaps, ie = enablegaps, mw, my, ty;
+      |                                                                            ^~
+dwm.c:1827:72: warning: unused variable 'my' [-Wunused-variable]
+ 1827 |         unsigned int i, n, h, r, oe = enablegaps, ie = enablegaps, mw, my, ty;
+      |                                                                        ^~
+dwm.c:1827:68: warning: variable 'mw' set but not used [-Wunused-but-set-variable=]
+ 1827 |         unsigned int i, n, h, r, oe = enablegaps, ie = enablegaps, mw, my, ty;
+      |                                                                    ^~
+dwm.c:1827:31: warning: unused variable 'r' [-Wunused-variable]
+ 1827 |         unsigned int i, n, h, r, oe = enablegaps, ie = enablegaps, mw, my, ty;
+      |                               ^
+dwm.c:1827:28: warning: unused variable 'h' [-Wunused-variable]
+ 1827 |         unsigned int i, n, h, r, oe = enablegaps, ie = enablegaps, mw, my, ty;
+      |                            ^
+dwm.c:1827:22: warning: unused variable 'i' [-Wunused-variable]
+ 1827 |         unsigned int i, n, h, r, oe = enablegaps, ie = enablegaps, mw, my, ty;
+      |                      ^
+dwm.c: At top level:
+dwm.c:1634:1: warning: 'incrivgaps' defined but not used [-Wunused-function]
+ 1634 | incrivgaps(const Arg *arg)
+      | ^~~~~~~~~~
+dwm.c:1623:1: warning: 'incrihgaps' defined but not used [-Wunused-function]
+ 1623 | incrihgaps(const Arg *arg)
+      | ^~~~~~~~~~
+dwm.c:1612:1: warning: 'incrovgaps' defined but not used [-Wunused-function]
+ 1612 | incrovgaps(const Arg *arg)
+      | ^~~~~~~~~~
+dwm.c:1601:1: warning: 'incrohgaps' defined but not used [-Wunused-function]
+ 1601 | incrohgaps(const Arg *arg)
+      | ^~~~~~~~~~
+dwm.c:1590:1: warning: 'incrogaps' defined but not used [-Wunused-function]
+ 1590 | incrogaps(const Arg *arg)
+      | ^~~~~~~~~
+dwm.c:1579:1: warning: 'incrigaps' defined but not used [-Wunused-function]
+ 1579 | incrigaps(const Arg *arg)
+      | ^~~~~~~~~
+dwm.c:1568:1: warning: 'incrgaps' defined but not used [-Wunused-function]
+ 1568 | incrgaps(const Arg *arg)
+      | ^~~~~~~~
+dwm.c:1562:1: warning: 'defaultgaps' defined but not used [-Wunused-function]
+ 1562 | defaultgaps(const Arg *arg)
+      | ^~~~~~~~~~~
+dwm.c:1555:1: warning: 'togglegaps' defined but not used [-Wunused-function]
+ 1555 | togglegaps(const Arg *arg)
+      | ^~~~~~~~~~
+make: *** [Makefile:12: dwm.o] Error 1
