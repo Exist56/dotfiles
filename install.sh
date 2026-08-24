@@ -21,7 +21,8 @@ freetype2
 fontconfig
 picom
 feh
-ttf-jetbrains-mono-nerd);
+ttf-jetbrains-mono-nerd
+falkon);
 
 for i in "${packages[@]}"; do 
 	sudo pacman -S --noconfirm $i
@@ -29,10 +30,10 @@ done
 
 echo "Creating Directories"
 mkdir -p "$HOME/.local/share/wallpaper"
-mkdir -p "$HOME/.local/src/"
+mkdir -p "$HOME/.local/src"
 
-DOTFILES="$HOME/dotfiles/"
-SRC="$HOME/.local/src/"
+DOTFILES="$HOME/dotfiles"
+SRC="$HOME/.local/src"
 
 #Bash Files
 ln -sfn "$DOTFILES/mainDotFiles/bashrc" "$HOME/.bashrc"
