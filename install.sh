@@ -23,7 +23,7 @@ picom
 feh
 ttf-jetbrains-mono-nerd);
 
-for i in "${$packages[@]}"; do 
+for i in "${packages[@]}"; do 
 	sudo pacman -S --noconfirm $i
 done
 
