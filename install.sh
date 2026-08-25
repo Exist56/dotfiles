@@ -35,6 +35,18 @@ mkdir -p "$HOME/.local/src"
 DOTFILES="$HOME/dotfiles"
 SRC="$HOME/.local/src"
 
+#Compile Suckless tools
+cd $DOTFILES/suckless/dmenu/
+sudo make clean install
+
+cd $DOTFILES/suckless/dwm
+sudo make clean install 
+
+cd $DOTFILES/suckless/st
+sudo make clean install
+
+cd $DOTFILES
+
 #Bash Files
 ln -sfn "$DOTFILES/mainDotFiles/bashrc" "$HOME/.bashrc"
 ln -sfn "$DOTFILES/mainDotFiles/bash_profile" "$HOME/.bash_profile"
